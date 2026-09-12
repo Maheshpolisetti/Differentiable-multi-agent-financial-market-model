@@ -1,0 +1,2575 @@
+{
+  "meta": {
+    "trained_on": "2011-06-01_to_2021-04-30",
+    "n_agents": 300,
+    "n_investors": 36,
+    "n_momentum": 100,
+    "n_value": 100,
+    "n_random": 64,
+    "risk_bands": [
+      [
+        "low",
+        0.0,
+        0.3
+      ],
+      [
+        "mid",
+        0.3,
+        0.6
+      ],
+      [
+        "high",
+        0.6,
+        1.0
+      ]
+    ],
+    "discriminator_final_accuracy": 1.0,
+    "eta_learned": 0.07670606672763824
+  },
+  "agents": [
+    {
+      "id": 0,
+      "type": "lstm",
+      "risk": 0.1891861855983734,
+      "fear": 0.7865647673606873,
+      "boldness": 0.6286128759384155,
+      "range_stock": 10,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 0
+    },
+    {
+      "id": 1,
+      "type": "lstm",
+      "risk": 0.3074873685836792,
+      "fear": 0.6190689206123352,
+      "boldness": 0.9260308146476746,
+      "range_stock": 10,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 0
+    },
+    {
+      "id": 2,
+      "type": "lstm",
+      "risk": 0.7141796350479126,
+      "fear": 0.8131741285324097,
+      "boldness": 0.7471470832824707,
+      "range_stock": 10,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 0
+    },
+    {
+      "id": 3,
+      "type": "lstm",
+      "risk": 0.0681825503706932,
+      "fear": 0.584165096282959,
+      "boldness": 0.6680973172187805,
+      "range_stock": 6,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 1
+    },
+    {
+      "id": 4,
+      "type": "lstm",
+      "risk": 0.5278867483139038,
+      "fear": 0.6865948438644409,
+      "boldness": 0.9133694171905518,
+      "range_stock": 7,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 1
+    },
+    {
+      "id": 5,
+      "type": "lstm",
+      "risk": 0.8781837821006775,
+      "fear": 0.15907971560955048,
+      "boldness": 0.625816822052002,
+      "range_stock": 8,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 1
+    },
+    {
+      "id": 6,
+      "type": "lstm",
+      "risk": 0.2718271017074585,
+      "fear": 0.3040720522403717,
+      "boldness": 0.5285412669181824,
+      "range_stock": 5,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 2
+    },
+    {
+      "id": 7,
+      "type": "lstm",
+      "risk": 0.3359562158584595,
+      "fear": 0.3536788821220398,
+      "boldness": 0.613779604434967,
+      "range_stock": 10,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 2
+    },
+    {
+      "id": 8,
+      "type": "lstm",
+      "risk": 0.77847820520401,
+      "fear": 0.18625427782535553,
+      "boldness": 0.6803557872772217,
+      "range_stock": 7,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 2
+    },
+    {
+      "id": 9,
+      "type": "gru",
+      "risk": 0.012949056923389435,
+      "fear": 0.31012773513793945,
+      "boldness": 0.9480375647544861,
+      "range_stock": 9,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 3
+    },
+    {
+      "id": 10,
+      "type": "gru",
+      "risk": 0.3720587193965912,
+      "fear": 0.20498298108577728,
+      "boldness": 0.9985283613204956,
+      "range_stock": 7,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 3
+    },
+    {
+      "id": 11,
+      "type": "gru",
+      "risk": 0.8114328980445862,
+      "fear": 0.34539270401000977,
+      "boldness": 0.6543862223625183,
+      "range_stock": 10,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 3
+    },
+    {
+      "id": 12,
+      "type": "gru",
+      "risk": 0.008408164605498314,
+      "fear": 0.6315985321998596,
+      "boldness": 0.8357057571411133,
+      "range_stock": 5,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 4
+    },
+    {
+      "id": 13,
+      "type": "gru",
+      "risk": 0.3658572733402252,
+      "fear": 0.41476213932037354,
+      "boldness": 0.711879551410675,
+      "range_stock": 10,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 4
+    },
+    {
+      "id": 14,
+      "type": "gru",
+      "risk": 0.8677513003349304,
+      "fear": 0.4200490415096283,
+      "boldness": 1.002875804901123,
+      "range_stock": 7,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 4
+    },
+    {
+      "id": 15,
+      "type": "gru",
+      "risk": 0.16752631962299347,
+      "fear": 0.290365070104599,
+      "boldness": 0.7715456485748291,
+      "range_stock": 9,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 5
+    },
+    {
+      "id": 16,
+      "type": "gru",
+      "risk": 0.37105992436408997,
+      "fear": 0.33689412474632263,
+      "boldness": 0.9733497500419617,
+      "range_stock": 7,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 5
+    },
+    {
+      "id": 17,
+      "type": "gru",
+      "risk": 0.8437641859054565,
+      "fear": 0.8713260293006897,
+      "boldness": 0.563747763633728,
+      "range_stock": 10,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 5
+    },
+    {
+      "id": 18,
+      "type": "cnn",
+      "risk": 0.24475130438804626,
+      "fear": 0.6428970694541931,
+      "boldness": 0.9989907741546631,
+      "range_stock": 8,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 6
+    },
+    {
+      "id": 19,
+      "type": "cnn",
+      "risk": 0.3024733066558838,
+      "fear": 0.6102340221405029,
+      "boldness": 0.6022078990936279,
+      "range_stock": 7,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 6
+    },
+    {
+      "id": 20,
+      "type": "cnn",
+      "risk": 0.9269505739212036,
+      "fear": 0.26170819997787476,
+      "boldness": 0.9917681217193604,
+      "range_stock": 8,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 6
+    },
+    {
+      "id": 21,
+      "type": "cnn",
+      "risk": 0.21637655794620514,
+      "fear": 0.7061378359794617,
+      "boldness": 0.6494455337524414,
+      "range_stock": 10,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 7
+    },
+    {
+      "id": 22,
+      "type": "cnn",
+      "risk": 0.40707436203956604,
+      "fear": 0.25334325432777405,
+      "boldness": 0.5690156817436218,
+      "range_stock": 7,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 7
+    },
+    {
+      "id": 23,
+      "type": "cnn",
+      "risk": 0.6704354882240295,
+      "fear": 0.4269694983959198,
+      "boldness": 0.7329237461090088,
+      "range_stock": 9,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 7
+    },
+    {
+      "id": 24,
+      "type": "cnn",
+      "risk": 0.29663243889808655,
+      "fear": 0.914409339427948,
+      "boldness": 0.8842781186103821,
+      "range_stock": 6,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 8
+    },
+    {
+      "id": 25,
+      "type": "cnn",
+      "risk": 0.40956729650497437,
+      "fear": 0.6346405148506165,
+      "boldness": 0.6759626269340515,
+      "range_stock": 6,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 8
+    },
+    {
+      "id": 26,
+      "type": "cnn",
+      "risk": 0.6482753157615662,
+      "fear": 0.5689151883125305,
+      "boldness": 0.8220570087432861,
+      "range_stock": 8,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 8
+    },
+    {
+      "id": 27,
+      "type": "mlp",
+      "risk": 0.04229383543133736,
+      "fear": 0.6699708104133606,
+      "boldness": 0.7807362079620361,
+      "range_stock": 10,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 9
+    },
+    {
+      "id": 28,
+      "type": "mlp",
+      "risk": 0.5683671236038208,
+      "fear": 0.7961641550064087,
+      "boldness": 0.7178656458854675,
+      "range_stock": 8,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 9
+    },
+    {
+      "id": 29,
+      "type": "mlp",
+      "risk": 0.8578901886940002,
+      "fear": 0.743005096912384,
+      "boldness": 0.8137494921684265,
+      "range_stock": 10,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 9
+    },
+    {
+      "id": 30,
+      "type": "mlp",
+      "risk": 0.2514401078224182,
+      "fear": 0.3053351938724518,
+      "boldness": 0.6461270451545715,
+      "range_stock": 10,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 10
+    },
+    {
+      "id": 31,
+      "type": "mlp",
+      "risk": 0.52676922082901,
+      "fear": 0.14837343990802765,
+      "boldness": 0.8715111017227173,
+      "range_stock": 6,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 10
+    },
+    {
+      "id": 32,
+      "type": "mlp",
+      "risk": 0.8247154355049133,
+      "fear": 0.37397143244743347,
+      "boldness": 0.5193002223968506,
+      "range_stock": 9,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 10
+    },
+    {
+      "id": 33,
+      "type": "mlp",
+      "risk": 0.30472639203071594,
+      "fear": 0.33707717061042786,
+      "boldness": 0.9856578707695007,
+      "range_stock": 9,
+      "band": "low",
+      "band_lo": 0.0,
+      "band_hi": 0.3,
+      "checkpoint_id": 11
+    },
+    {
+      "id": 34,
+      "type": "mlp",
+      "risk": 0.42379406094551086,
+      "fear": 0.2912061810493469,
+      "boldness": 0.7915412783622742,
+      "range_stock": 7,
+      "band": "mid",
+      "band_lo": 0.3,
+      "band_hi": 0.6,
+      "checkpoint_id": 11
+    },
+    {
+      "id": 35,
+      "type": "mlp",
+      "risk": 0.8341378569602966,
+      "fear": 0.8763679265975952,
+      "boldness": 0.8836082220077515,
+      "range_stock": 8,
+      "band": "high",
+      "band_lo": 0.6,
+      "band_hi": 1.0,
+      "checkpoint_id": 11
+    },
+    {
+      "id": 36,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.801094114780426,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 37,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.35174229741096497,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 38,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.624350905418396,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 39,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.41650551557540894,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 40,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8316380977630615,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 41,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.4670814871788025,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 42,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.3119041323661804,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 43,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.2973020076751709,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 44,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5490944981575012,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 45,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.3101933002471924,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 46,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5676687955856323,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 47,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8182582855224609,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 48,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.41952040791511536,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 49,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.27545660734176636,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 50,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8980301022529602,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 51,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5076210498809814,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 52,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.1727275252342224,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 53,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.1376931071281433,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 54,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.18771930038928986,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 55,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.601956844329834,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 56,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.7336634993553162,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 57,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.43772798776626587,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 58,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.15082216262817383,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 59,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.4052954316139221,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 60,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8968970775604248,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 61,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5232914686203003,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 62,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8768627047538757,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 63,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.7886237502098083,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 64,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.10918481647968292,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 65,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.6765774488449097,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 66,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.6453682780265808,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 67,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5295762419700623,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 68,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.3134601414203644,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 69,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.6127694249153137,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 70,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.18924173712730408,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 71,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.44781219959259033,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 72,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.46297895908355713,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 73,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8630527257919312,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 74,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8006823658943176,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 75,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.31071123480796814,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 76,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.500468909740448,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 77,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.24292150139808655,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 78,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.830102264881134,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 79,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.796414852142334,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 80,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.33875584602355957,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 81,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.61115962266922,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 82,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5871761441230774,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 83,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.2222714126110077,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 84,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.7100086212158203,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 85,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5315032005310059,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 86,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.7229011654853821,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 87,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5242829322814941,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 88,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.10045751929283142,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 89,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.3593248426914215,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 90,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.11558139324188232,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 91,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8432788848876953,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 92,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8029775023460388,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 93,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.7653324007987976,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 94,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.34601131081581116,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 95,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.14634013175964355,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 96,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8024076819419861,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 97,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8575595617294312,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 98,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.16852276027202606,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 99,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.488792359828949,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 100,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.15537001192569733,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 101,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.7084817290306091,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 102,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.7126675248146057,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 103,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.20271317660808563,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 104,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.48022589087486267,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 105,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5398429036140442,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 106,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.31204530596733093,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 107,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.7979464530944824,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 108,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.43851035833358765,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 109,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.26943856477737427,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 110,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5314368605613708,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 111,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.6839448809623718,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 112,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.26092085242271423,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 113,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.3493730425834656,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 114,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8961194753646851,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 115,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.6199024319648743,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 116,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.45048007369041443,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 117,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5140606760978699,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 118,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.19680336117744446,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 119,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.27975785732269287,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 120,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.3704684376716614,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 121,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5706470012664795,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 122,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.2840918004512787,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 123,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.2761739194393158,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 124,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.156794473528862,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 125,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.6048823595046997,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 126,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.2831534147262573,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 127,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8243359923362732,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 128,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.7877083420753479,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 129,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.15668587386608124,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 130,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.29040369391441345,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 131,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.6351822018623352,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 132,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.2713894546031952,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 133,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.20584948360919952,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 134,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.8484113812446594,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 135,
+      "type": "momentum",
+      "risk": 0.5,
+      "fear": 0.5568344593048096,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 136,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.47813680768013,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 137,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.7276955246925354,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 138,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.7459976077079773,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 139,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.25232791900634766,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 140,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.17754465341567993,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 141,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.4448409378528595,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 142,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.4388628900051117,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 143,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.4736197292804718,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 144,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.6832606792449951,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 145,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.6386916637420654,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 146,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8873321413993835,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 147,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.17873430252075195,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 148,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.42209702730178833,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 149,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.3714420795440674,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 150,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.7893380522727966,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 151,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.2989250719547272,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 152,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.25216713547706604,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 153,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.458890825510025,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 154,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.437505304813385,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 155,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.32283610105514526,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 156,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.2998451590538025,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 157,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8386124968528748,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 158,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.4545046091079712,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 159,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.7890793085098267,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 160,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5402602553367615,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 161,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.14047066867351532,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 162,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8994259834289551,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 163,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.7688220739364624,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 164,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8751969933509827,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 165,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8410935997962952,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 166,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.7789565920829773,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 167,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.23304888606071472,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 168,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.48851290345191956,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 169,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.2709978520870209,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 170,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.42083224654197693,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 171,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.14690831303596497,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 172,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.40317848324775696,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 173,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8882470726966858,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 174,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.31216245889663696,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 175,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.7272564768791199,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 176,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.4640066921710968,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 177,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.43840599060058594,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 178,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8658540844917297,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 179,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.896338164806366,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 180,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5446146726608276,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 181,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.6747266054153442,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 182,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.2238374650478363,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 183,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.3373662531375885,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 184,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8749675154685974,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 185,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5633442401885986,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 186,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5337561368942261,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 187,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.6983804702758789,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 188,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.14573222398757935,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 189,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5673421025276184,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 190,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5022802948951721,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 191,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.7821758985519409,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 192,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.22594618797302246,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 193,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8686231374740601,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 194,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.164089173078537,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 195,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.24865996837615967,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 196,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5760281085968018,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 197,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.6401700377464294,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 198,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.28816312551498413,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 199,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.1959092915058136,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 200,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8122298717498779,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 201,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.29697227478027344,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 202,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5756153464317322,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 203,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5955052375793457,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 204,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.43537992238998413,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 205,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5669378042221069,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 206,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.518226146697998,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 207,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8477650284767151,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 208,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.2634073495864868,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 209,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.6729534268379211,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 210,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.290948748588562,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 211,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.4166286885738373,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 212,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.6373521685600281,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 213,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.33999764919281006,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 214,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.35294175148010254,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 215,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.7014915943145752,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 216,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.15803448855876923,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 217,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.46662843227386475,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 218,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8987635374069214,
+      "boldness": 1.0,
+      "range_stock": 8
+    },
+    {
+      "id": 219,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8968771696090698,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 220,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.1586085706949234,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 221,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.27052345871925354,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 222,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.31216034293174744,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 223,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.846607506275177,
+      "boldness": 1.0,
+      "range_stock": 7
+    },
+    {
+      "id": 224,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8046913146972656,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 225,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.8034161925315857,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 226,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.395621657371521,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 227,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.22619746625423431,
+      "boldness": 1.0,
+      "range_stock": 10
+    },
+    {
+      "id": 228,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.7669959664344788,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 229,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.6628319621086121,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 230,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.5893422365188599,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 231,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.889786422252655,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 232,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.6231810450553894,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 233,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.10625848919153214,
+      "boldness": 1.0,
+      "range_stock": 9
+    },
+    {
+      "id": 234,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.75368332862854,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 235,
+      "type": "value",
+      "risk": 0.5,
+      "fear": 0.3395029902458191,
+      "boldness": 1.0,
+      "range_stock": 6
+    },
+    {
+      "id": 236,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.6307109594345093,
+      "boldness": 1.0,
+      "range_stock": 2
+    },
+    {
+      "id": 237,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.851144015789032,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 238,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.20743289589881897,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 239,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.19234293699264526,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 240,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.18562878668308258,
+      "boldness": 1.0,
+      "range_stock": 2
+    },
+    {
+      "id": 241,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.542578935623169,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 242,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.3178785741329193,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 243,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.5838638544082642,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 244,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.6740897297859192,
+      "boldness": 1.0,
+      "range_stock": 2
+    },
+    {
+      "id": 245,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.26287785172462463,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 246,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.6073903441429138,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 247,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.31118711829185486,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 248,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.49082547426223755,
+      "boldness": 1.0,
+      "range_stock": 2
+    },
+    {
+      "id": 249,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.82426917552948,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 250,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7768829464912415,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 251,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.1738387793302536,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 252,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.43886062502861023,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 253,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.32134416699409485,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 254,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.10283654928207397,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 255,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7168954014778137,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 256,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.6096907258033752,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 257,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.3095642030239105,
+      "boldness": 1.0,
+      "range_stock": 2
+    },
+    {
+      "id": 258,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.6929847002029419,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 259,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.5413443446159363,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 260,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.4421495497226715,
+      "boldness": 1.0,
+      "range_stock": 2
+    },
+    {
+      "id": 261,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.1077357605099678,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 262,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.16019508242607117,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 263,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.806485116481781,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 264,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.8231428861618042,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 265,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.5364722609519958,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 266,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7676759958267212,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 267,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.566007673740387,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 268,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.21847502887248993,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 269,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.20195642113685608,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 270,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.34660667181015015,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 271,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.819185197353363,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 272,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7368978261947632,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 273,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7885620594024658,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 274,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.8191397190093994,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 275,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.26806122064590454,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 276,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.2996237874031067,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 277,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.18223489820957184,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 278,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7240930199623108,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 279,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.807307779788971,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 280,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.4251019060611725,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 281,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.5965291857719421,
+      "boldness": 1.0,
+      "range_stock": 2
+    },
+    {
+      "id": 282,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.22364267706871033,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 283,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.8439047932624817,
+      "boldness": 1.0,
+      "range_stock": 2
+    },
+    {
+      "id": 284,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7916845679283142,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 285,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.8809648156166077,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 286,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7486173510551453,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 287,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.8051329851150513,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 288,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.11982908844947815,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 289,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.6892516016960144,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 290,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.3657483756542206,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 291,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.8446527123451233,
+      "boldness": 1.0,
+      "range_stock": 5
+    },
+    {
+      "id": 292,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7417880892753601,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 293,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7912512421607971,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 294,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7485994696617126,
+      "boldness": 1.0,
+      "range_stock": 2
+    },
+    {
+      "id": 295,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.3134445548057556,
+      "boldness": 1.0,
+      "range_stock": 1
+    },
+    {
+      "id": 296,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7298995852470398,
+      "boldness": 1.0,
+      "range_stock": 3
+    },
+    {
+      "id": 297,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.18647649884223938,
+      "boldness": 1.0,
+      "range_stock": 4
+    },
+    {
+      "id": 298,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7977334260940552,
+      "boldness": 1.0,
+      "range_stock": 2
+    },
+    {
+      "id": 299,
+      "type": "random",
+      "risk": 0.5,
+      "fear": 0.7868745923042297,
+      "boldness": 1.0,
+      "range_stock": 4
+    }
+  ]
+}
